@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Event</title>
+
+</head>
+<body>
+    <h2>More event practicing</h2>
+    <input type="text" id="more-input">
+    <button id="event">Event</button>
+    <script>
+        // document.getElementById('more-input').addEventListener('keypress', function(event){
+        //     console.log(event.target.value)
+        // })
+        document.getElementById('more-input').addEventListener('keyup', function(event){
+            console.log(event.target.value)
+        })
+        document.getElementById('event').addEventListener('click', function(){
+            console.log('event  triggered')
+        })
+    </script>
+</body>
+</html>

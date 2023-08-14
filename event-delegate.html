@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegate</title>
+</head>
+
+<body>
+    <h2>Event Delegate exploring</h2>
+    <section>
+        <ul id="ul-items">
+            <li class="items">Lorem, ipsum dolor.</li>
+            <li class="items">Quasi, pariatur sint.</li>
+            <li class="items">Velit, quasi rerum.</li>
+            <li class="items">Possimus, repellendus sed.</li>
+            <li class="items">Debitis, corrupti aspernatur!</li>
+            <li class="items">Eius, dolorem nemo.</li>
+        </ul>
+        <button id="add-item">Add new item list</button>
+    </section>
+
+    <script>
+        // const items = document.getElementsByClassName('items');
+        // for (const item of items) {
+        //     item.addEventListener('click', function (event) {
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+        document.getElementById('ul-items').addEventListener('click', function (event) {
+            event.target.parentNode.removeChild(event.target);
+        })
+
+        document.getElementById('add-item').addEventListener('click', function (event) {
+            const ulContainer = document.getElementById('ul-items');
+            const li = document.createElement('li');
+            li.innerText = 'Brand new items adde to the list';
+            ulContainer.appendChild(li);
+        })
+    </script>
+</body>
+
+</html>

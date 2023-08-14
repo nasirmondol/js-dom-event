@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <title>JS DOM EVENT</title>
+</head>
+<body>
+    <main>
+        <h2>This dom event website</h2>
+        <button onclick="console.log('Hi, How are you?')">Click me</button>
+        <button  onclick="console.log(100)">click me now</button>
+        <button  onclick="document.body.style.backgroundColor = 'red'">Make red</button>
+        <button id="make-red">orange</button>
+        <button id="purple">Make purple</button>
+        <button onclick="green()">Make green</button>
+        <button id="make-pink">Pink color</button>
+        <button id="tomato">Make tomato</button>
+        <button id="make-golden">Make golden Rod</button>
+
+        <button onclick="yellow()">Make yellow</button>
+     <script src="js/dom.js"></script>
+     <script>
+        function green(){
+            document.body.style.backgroundColor = 'green'
+        }
+     </script>
+</body>
+</html>
